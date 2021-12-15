@@ -1,7 +1,0 @@
-package com.casestudy.bookservice;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface BookServiceRepo extends JpaRepository<T, ID> {
-
-}
