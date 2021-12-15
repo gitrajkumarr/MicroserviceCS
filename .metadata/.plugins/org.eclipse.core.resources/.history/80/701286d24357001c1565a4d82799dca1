@@ -1,0 +1,7 @@
+package com.casestudy.subscriptionservice.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SubscriptionRepo extends JpaRepository<T, ID> {
+
+}

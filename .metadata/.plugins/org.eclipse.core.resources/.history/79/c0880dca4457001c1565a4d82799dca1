@@ -1,0 +1,21 @@
+package com.casestudy.subscriptionservice.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.casestudy.subscriptionservice.Repositary.SubscriptionRepo;
+
+@Service
+@Transactional
+public class SubscriptionService {
+	
+	@Autowired
+	private SubscriptionRepo repo;
+	
+	public List<Subscription> getAll(){
+		return repo.findAll();
+	}
+
+}

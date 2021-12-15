@@ -1,0 +1,7 @@
+package com.casestudy.subscriptionservice.exception;
+
+public class CopiesNotAvailbaleException extends Exception{
+	public CopiesNotAvailbaleException(String message) {
+	      super(message);
+	  }
+}

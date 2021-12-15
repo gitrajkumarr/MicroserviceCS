@@ -1,0 +1,1 @@
+INSERT INTO Book (id,Book_Name,Author,Available_Copies,Total_Copies) VALUES (1001,'HistoryofAmazonValley','RossSuarez',10,20);

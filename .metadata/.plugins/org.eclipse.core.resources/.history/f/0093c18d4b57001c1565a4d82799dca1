@@ -1,0 +1,27 @@
+package com.casestudy.subscriptionservice.bean;
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Subscription {
+	@Id
+	@Column(name="id")
+	private int id;
+	
+	@Column(name="book_id")
+	private String bookId;
+	
+	@Column(name="subscriber_name")
+	private String subscriberName;
+	
+	@Column(name="date_subscribed")
+	private Date subscribedDate;
+	
+	@Column(name="date_returned")
+	private Date returnDate;	
+
+}

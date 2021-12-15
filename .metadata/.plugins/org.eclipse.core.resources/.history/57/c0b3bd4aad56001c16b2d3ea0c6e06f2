@@ -1,0 +1,27 @@
+package com.casestudy.services.bookservice;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.casestudy.bookservice.Repositary.BookServiceRepo;
+import com.casestudy.bookservice.bean.Book;
+
+@Service
+@Transactional
+public class BookService {
+	
+	@Autowired
+	BookServiceRepo bookServiceRepo;
+
+	public List<Book> findAll() {
+		
+		return bookServiceRepo.findAll();
+	}
+	
+	
+
+}

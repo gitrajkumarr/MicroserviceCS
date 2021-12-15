@@ -1,0 +1,18 @@
+package com.casestudy.bookservice.Repositary;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.casestudy.bookservice.bean.Book;
+
+public interface BookServiceRepo extends JpaRepository<Book, Integer> {
+	
+	
+	@Query(value ="select b from book b where b.bookid = :bookId")
+	public Book getBookByUsingId(String bookId);
+	
+
+
+}

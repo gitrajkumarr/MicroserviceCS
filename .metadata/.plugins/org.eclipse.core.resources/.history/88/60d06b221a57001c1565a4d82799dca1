@@ -1,0 +1,5 @@
+package com.casestudy.bookservice.service;
+
+public class BookService {
+
+}

@@ -1,0 +1,11 @@
+package com.casestudy.bookservice.Repositary;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.casestudy.bookservice.bean.Book;
+
+public interface BookServiceRepo extends JpaRepository<Book, Integer> {
+	
+	
+
+}

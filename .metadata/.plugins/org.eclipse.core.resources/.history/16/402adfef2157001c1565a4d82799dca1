@@ -1,0 +1,70 @@
+package com.casestudy.bookservice.bean;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
+@Entity
+public class Book {
+	
+	@Id
+	@Column(name = "id")
+    private String id ;
+	
+	@Column(name="Book_Name")
+    private String name;
+	
+	@Column(name="Author")
+    private String author;
+	
+	@Column(name="Available_Copies")
+    private Number numcopiesAvailable ;
+	
+	@Column(name="Total_Copies")
+    private Number totalCopies ;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public Number getNumcopiesAvailable() {
+		return numcopiesAvailable;
+	}
+
+	public void setNumcopiesAvailable(Number numcopiesAvailable) {
+		this.numcopiesAvailable = numcopiesAvailable;
+	}
+
+	public Number getTotalCopies() {
+		return totalCopies;
+	}
+
+	public void setTotalCopies(Number totalCopies) {
+		this.totalCopies = totalCopies;
+	}
+    
+    
+
+}
